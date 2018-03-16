@@ -17,6 +17,9 @@ def beer(bottles)
         
         bottles -=1
     end
+    
+    puts "No more bottles of beer on the wall, no more bottles of beer.
+    Can't take one down and pass it around, no more bottles of beer on the wall"
 end
 
 #Test
