@@ -98,6 +98,8 @@ puts englishNumber(999999)
 puts englishNumber(1000000000000)
 
 =begin
+To complete
+
 Expand upon englishNumber. First, put in thousands. So it should return 'one thousand' instead of 'ten hundred' and 'ten thousand' instead of 'one hundred hundred'.
 
 Expand upon englishNumber some more. Now put in millions, so you get 'one million' instead of 'one thousand thousand'. Then try adding billions and trillions. How high can you go?
