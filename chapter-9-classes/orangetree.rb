@@ -20,9 +20,16 @@ class OrangeTree
     end
 
     puts "One year has passed"
-    puts "Your tree is #{@height} inches tall, and #{@age} years old"
-    puts "Your tree has #{@fruit} oranges"
+    ageTree
+    height
+    countTheOranges
   end
+
+
+  def ageTree
+    puts "Your tree is #{@age} years old"
+  end
+
 
   def die
     if age >= 200
@@ -44,8 +51,9 @@ class OrangeTree
       taste = ["tangy", "sweet", "off"]
       puts "You've picked a juicy orange"
       puts "It tastes #{taste.sample}"
-      puts "There are #{@fruit} oranges left on your tree"
+      countTheOranges
     else
+      countTheOranges
       puts "There are no oranges to pick"
     end
 
