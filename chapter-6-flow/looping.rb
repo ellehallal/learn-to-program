@@ -1,7 +1,7 @@
-command =""
-puts "Enter your command"
+command = ""
+
 while command != 'bye'
-  puts command
+  puts "Enter your command"
   command = gets.chomp
 end
 
