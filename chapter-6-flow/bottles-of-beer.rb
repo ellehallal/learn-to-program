@@ -3,21 +3,21 @@
 # "99 Bottles of Beer on the Wall."
 
 def beer(bottles)
-    while bottles > 0
-        (bottles >= 2 or bottles == 0) ? lyric = "bottles" : lyric = "bottle"
+  while bottles > 0
+    (bottles >= 2 or bottles == 0) ? lyric = "bottles" : lyric = "bottle"
 
-        new_bottles = bottles - 1
+    new_bottles = bottles - 1
 
-        new_bottles == 1 ? new_lyric = "bottle" : new_lyric = "bottles"
+    new_bottles == 1 ? new_lyric = "bottle" : new_lyric = "bottles"
 
-        puts "#{bottles} #{lyric} of beer on the wall, #{bottles} #{lyric} of beer.
-        Take one down and pass it around, #{new_bottles} #{new_lyric} of beer on the wall."
+    puts "#{bottles} #{lyric} of beer on the wall, #{bottles} #{lyric} of beer.
+    Take one down and pass it around, #{new_bottles} #{new_lyric} of beer on the wall."
 
-        bottles -=1
-    end
+    bottles -=1
+  end
 
-    puts "No more bottles of beer on the wall, no more bottles of beer.
-    Can't take one down and pass it around, no more bottles of beer on the wall"
+  puts "No more bottles of beer on the wall, no more bottles of beer.
+  Can't take one down and pass it around, no more bottles of beer on the wall"
 end
 
 #Test
