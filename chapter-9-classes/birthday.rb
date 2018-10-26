@@ -11,7 +11,7 @@ def birthday
 
   ageyear = nowdate.year - birthdate.year
 
-  if birthdate.month > nowdate.month and birthdate.day > nowdate.day
+  if birthdate.month > nowdate.month && birthdate.day > nowdate.day
     "You are #{ageyear - 1} years old"
   else
     "You are #{ageyear} years old"
