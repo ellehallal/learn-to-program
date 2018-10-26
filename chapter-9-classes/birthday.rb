@@ -6,16 +6,16 @@ def birthday
   puts "What day were you born on?"
   birthday = gets.chomp.to_i
 
-  birthdate = Time.mktime(birthyear, birthmonth, birthday)
+  birthdate = Time.new(birthyear, birthmonth, birthday)
   nowdate = Time.now
 
   ageyear = nowdate.year - birthdate.year
 
   if birthdate.month > nowdate.month and birthdate.day > nowdate.day
-    puts "You are #{ageyear - 1} years old"
+    "You are #{ageyear - 1} years old"
   else
-    puts "You are #{ageyear} years old"
+    "You are #{ageyear} years old"
   end
 end
 
-birthday
+p birthday
