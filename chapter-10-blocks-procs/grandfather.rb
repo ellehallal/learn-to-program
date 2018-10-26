@@ -13,6 +13,6 @@ def clock(my_proc)
   hours.times{my_proc.call}
 end
 
-chime = Proc.new{puts 'DONG!'}
+chime = Proc.new{ puts 'DONG!' }
 
 clock(chime)
