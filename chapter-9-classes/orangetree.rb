@@ -11,10 +11,19 @@ class OrangeTree
     puts "Your tree is #{@height} inches tall"
   end
 
+  def ageTree
+    puts "Your tree is #{@age} years old"
+  end
+
+  def countTheOranges
+    puts "Your orange tree has #{@fruit} oranges."
+  end
+
   def oneYearPasses
     @height += 6
     @age += 1
     @fruit = 0
+
     if age >= 3
       @fruit += (2 * @age)
     end
@@ -23,11 +32,6 @@ class OrangeTree
     ageTree
     height
     countTheOranges
-  end
-
-
-  def ageTree
-    puts "Your tree is #{@age} years old"
   end
 
 
@@ -40,14 +44,11 @@ class OrangeTree
     end
   end
 
-  def countTheOranges
-    puts "Your orange tree has #{@fruit} oranges."
-  end
+
 
   def pickAnOrange
     if @fruit > 0
       @fruit -= 1
-
       taste = ["tangy", "sweet", "off"]
       puts "You've picked a juicy orange"
       puts "It tastes #{taste.sample}"
@@ -56,7 +57,6 @@ class OrangeTree
       countTheOranges
       puts "There are no oranges to pick"
     end
-
   end
 
 end
@@ -71,3 +71,4 @@ josie.countTheOranges
 josie.pickAnOrange
 josie.oneYearPasses
 josie.die
+josie.pickAnOrange
