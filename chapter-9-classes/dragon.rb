@@ -54,6 +54,7 @@ class Dragon
     end
   end
 
+
   private
 
   def hungry?
@@ -71,10 +72,10 @@ class Dragon
     else
       if @asleep
         @asleep = false
-        puts "He wakes up suddenyly"
+        puts "He wakes up suddenly"
       end
 
-      puts "#{@name} is starving. In despiration, he ate YOU!"
+      puts "#{@name} is starving. In desperation, he ate YOU!"
       exit
     end
 
@@ -102,14 +103,3 @@ class Dragon
   end
 
 end
-
-pet = Dragon.new("Tiny")
-pet.feed
-pet.toss
-pet.walk
-pet.putToBed
-pet.rock
-pet.putToBed
-pet.putToBed
-pet.putToBed
-pet.putToBed
